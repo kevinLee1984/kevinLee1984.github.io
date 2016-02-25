@@ -1,5 +1,3 @@
-<SCRIPT language=JavaScript>
-<!--
 	var caution = false
 	function setCookie(name, value, expires, path, domain, secure) {
 		var curCookie = name + "=" + escape(value) +
@@ -57,5 +55,3 @@
 	
 	setCookie("counter", visits, now)
 	document.write("您是第" + visits + "位")
-// -->
-</SCRIPT>
