@@ -31,21 +31,16 @@
 			else if (confirm("Cookie exceeds 4KB and will be cut!"))
 				document.cookie = curCookie
 		}
-
 		function getCookie(name) {
 			var prefix = name + "="
 			var cookieStartIndex = document.cookie.indexOf(prefix)
-
 			if (cookieStartIndex == -1)
 				return null
-		
 			var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
-
 			if (cookieEndIndex == -1)
 				cookieEndIndex = document.cookie.length
 			return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
 		}
-	
 		function deleteCookie(name, path, domain) {
 			if (getCookie(name)) {
 				document.cookie = name + "=" +
@@ -54,28 +49,21 @@
 				"; expires=Thu, 01-Jan-70 00:00:01 GMT"
 			}
 		}
-
 		function fixDate(date) {
 			var base = new Date(0)
 			var skew = base.getTime()
 			if (skew > 0)
 			date.setTime(date.getTime() - skew)
 		}
-	
 		var now = new Date()
 		fixDate(now)
-	
 		now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
-	
 		var visits = getCookie("counter")
-	
 		if (!visits)
 			visits = 1
 		else
 			visits = parseInt(visits) + 1  //改为1000，增加好快，^_^
-	
 		setCookie("counter", visits, now)
-		
 		document.write(visits)
 // -->
 	</SCRIPT>
@@ -88,38 +76,9 @@
 		<td colspan="13">
 			<img src="image/title/title_04.png" alt="" width="535" height="9" border="0"></td>
 	</tr>
-	<tr>
-		
-		<td align="left" valign="top"><a href="mailto:kevin-li@yeah.net" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image54','','image/title/title_12.png',1)"><img src="image/title/title3_12.png" name="Image54" width="74" height="25" border="0" id="Image54" alt=""></a></td>
-		
-	</tr>
 
-	<tr>
-		<td>
-			<img src="image/title/title_18.png" alt="" width="15" height="33" border="0"></td>
-		<td colspan="3" align="left" valign="top"><ul id="MenuBar1" class="MenuBarHorizontal">
-	  <li><a href="http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image44','','image/title/title_19.png',1)" class="MenuBarItemSubmenu"><img src="image/title/title3_19.png" name="Image44" width="123" height="33" border="0" id="Image44"></a>
-			    <ul>
-			      <li><a href="http://vbird.dic.ksu.edu.tw/linux_basic/Mandrake9.0/mandrake9.0.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image46','','image/title/title_26.png',1)"><img src="image/title/title_23.png" name="Image46" width="120" height="26" border="0" id="Image46" alt=""></a></li>
-                  <li><a href="http://vbird.dic.ksu.edu.tw/linux_basic/fedora_4/fc4.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image47','','image/title/title_27.png',1)"><img src="image/title/title_24.png" name="Image47" width="120" height="26" border="0" id="Image47" alt=""></a></li>
-                  <li><a href="http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image48','','image/title/title_28.png',1)"><img src="image/title/title_25.png" name="Image48" width="120" height="26" border="0" id="Image48" alt=""></a></li>
-                </ul>
-		      </li>
-		</ul></td>
-		<td>
-			<img src="image/title/title_20.png" alt="" width="42" height="33" border="0"></td>
-		<td colspan="3" align="left" valign="top"><ul id="MenuBar2" class="MenuBarHorizontal">
-	  <li><a href="http://vbird.dic.ksu.edu.tw/linux_server/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image45','','image/title/title_21.png',1)" class="MenuBarItemSubmenu"><img src="image/title/title3_21.png" name="Image45" width="125" height="33" border="0" id="Image45"></a>
-			    <ul>
-			      <li><a href="http://vbird.dic.ksu.edu.tw/linux_server/linux_redhat9/redhat9.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image43','','image/title/title_26.png',1)"><img src="image/title/title_23.png" name="Image43" width="120" height="26" border="0" id="Image43" alt=""></a></li>
-			      <li><a href="http://vbird.dic.ksu.edu.tw/linux_server/centos4.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image49','','image/title/title_27.png',1)"><img src="image/title/title_24.png" name="Image49" width="120" height="26" border="0" id="Image49" alt=""></a></li>
-			      <li><a href="http://vbird.dic.ksu.edu.tw/linux_server/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image50','','image/title/title_28.png',1)"><img src="image/title/title_25.png" name="Image50" width="120" height="26" border="0" id="Image50" alt=""></a></li>
-		        </ul>
-		      </li>
-		</ul></td>
-		<td>
-			<img src="image/title/title_22.png" alt="" width="47" height="33" border="0"></td>
-	</tr>
+
+
 	
 </tbody></table>
     <div class="wrapper">
