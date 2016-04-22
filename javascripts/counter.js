@@ -54,4 +54,4 @@
 		visits = parseInt(visits) + 1  //改为1000，增加好快，^_^
 	
 	setCookie("counter", visits, now)
-	document.write("您是第" + visits + "位")
+	document.write("" + visits + "位")
